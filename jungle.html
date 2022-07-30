@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <!-- font -->
+
+
+    <title>funky jungle</title>
+
+    <style type="text/css">
+        body {
+            width: 100%;
+            height: 100%;
+            flex-flow: column;
+            background-image: url("images/dk-jungle-bg.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: var(--secondary);
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 2em;
+            color: var(--highlight);
+            text-align: center;
+            justify-content: center;
+            overflow: hidden;
+            text-shadow: 2px 2px 2px black;
+        }
+
+        :root {
+            --primary: #008F11;
+            --secondary: #003B00;
+            --highlight: #00FF41;
+        }
+
+        #bg {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            image-rendering: pixelated;
+            object-fit: contain;
+            width: 100%;
+            height: 100%;
+            z-index: -5;
+        }
+
+        #DK {
+            display: none;
+            position: relative;
+            width: 395px;
+            height: 405px;
+        }
+    </style>
+</head>
+
+<body>
+    <img id="bg" src="images/dk.gif" oncontextmenu="return false"/>
+    
+    <h1>uh-oh! you just got funky jungle'd!</h1>
+
+    <img id="DK" src="images/dk.gif" />
+
+    <iframe src="audio/donkey kongs big banana.mp3" type="audio/mp3" allow="autoplay" id="audio" style="display:none"></iframe>
+
+</body>
+
+</html>
