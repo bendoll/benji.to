@@ -59,14 +59,27 @@
 </head>
 
 <body>
-    <img id="bg" src="images/dk.gif" oncontextmenu="return false"/>
-    
-    <h1>uh-oh! you just got funky jungle'd!</h1>
+    <audio id="divAudio">
+        <source src="audio/donkey kongs big banana.mp3" type="audio/mp3">
+    </audio>
 
-    <img id="DK" src="images/dk.gif" />
+    <script>
+        var vAudio = document.getElementById("divAudio");
+        var hasInit = false;
+        function playMusic() {
+            if (!hasInit) {
+                hasInit = true;
+                vAudio.play();
+            }
+        }
+    </script>
+    <div onmouseover="playMusic()">
+        <img id="bg" src="images/dk.gif" oncontextmenu="return false" />
 
-    <iframe src="audio/donkey kongs big banana.mp3" type="audio/mp3" allow="autoplay" id="audio" style="display:none"></iframe>
+        <h1>uh-oh! you just got funky jungle'd!</h1>
 
+        <img id="DK" src="images/dk.gif" />
+    </div>
 </body>
 
 </html>
