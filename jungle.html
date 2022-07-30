@@ -60,7 +60,7 @@
 
 <body>
     <audio id="divAudio">
-        <source src="audio/donkey kongs big banana.mp3" type="audio/mp3">
+        <source src="audio/donkey kongs big banana.mp3" type="audio/mp3" autoplay loop>
     </audio>
 
     <script>
@@ -69,6 +69,7 @@
         function playMusic() {
             if (!hasInit) {
                 hasInit = true;
+                vAudio.loop = true;
                 vAudio.play();
             }
         }
