@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
-<!-- By viewing this source code you agree that your soul is now property of Benjamin Doll Industries and associates.
-    Unauthorised use of images, audio sources, content, vibes, Netflix accounts, or ideas is strictly prohibited.
-    We know where you sleep. -->
+<!-- By viewing this source code you agree that your soul is now property of Benjamin Doll Industries and associates. Unauthorised use of images, audio sources, content, vibes, Netflix accounts, or ideas is strictly prohibited.
+We know where you sleep. -->
 
 <head>
     <!-- favicons -->
@@ -17,93 +16,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+    <link rel="stylesheet" href="css/index.css" />
 
     <title>Benjamin Doll | Homepage</title>
-
-    <style type="text/css">
-        body {
-            width: 100%;
-            height: 100%;
-            flex-flow: column;
-            background-image: url("images/repeated-square-dark.png");
-            background-color: #000;
-            color: var(--primary);
-            font-family: 'Ubuntu Mono', monospace;
-            overflow: hidden;
-            font-size: 1.5em;
-        }
-
-        :root {
-            --primary: #008F11;
-            --secondary: #003B00;
-            --highlight: #00FF41;
-        }
-
-        #command {
-            position: absolute;
-            padding: 1em;
-        }
-
-        #ASCII,
-        #Location {
-            position: relative;
-            text-align: center;
-            top: 10%;
-        }
-
-        #Location {
-            top: 10%;
-        }
-
-        /* main content */
-        #terminal {
-            position: absolute;
-            padding: 1em;
-            top: 55%;
-            left: 50%;
-            margin-right: -50%;
-            transform: translate(-50%, -50%);
-            line-height: 2em;
-            white-space: nowrap;
-        }
-
-        /* unvisited link */
-        a:link {
-            color: var(--highlight);
-        }
-
-        /* visited link */
-        a:visited {
-            color: var(--highlight);
-        }
-
-        /* mouse over link */
-        a:hover {
-            color: var(--primary);
-        }
-
-        /* selected link */
-        a:active {
-            color: var(--secondary);
-        }
-
-        #Command .link,
-        #Command .link a:visited {
-            text-decoration: none !important;
-            color: var(--primary) !important;
-        }
-    </style>
-
-
 </head>
 
 <body>
-    <div id="command"><span style="font-style: italic;">viewer@benji.to:~$</span><span> &nbsp;homepage</span></div><br>
-
-    <pre id="ASCII">
-
-
-
+    <div id="command"><span>viewer@benji.to:~$</span><span> &nbsp;homepage</span></div>
+    <div id="info">
+        <pre id="ASCII">
     ____                  _                    _           ____          __ __
    / __ ) ___   ____     (_)____ _ ____ ___   (_)____     / __ \ ____   / // /
   / __  |/ _ \ / __ \   / // __ `// __ `__ \ / // __ \   / / / // __ \ / // / 
@@ -112,20 +33,33 @@
                    /___/                                                      
 
 
-
-</pre>
-
-    <div id="Location" class="Line">⌖ Toronto, ON, Canada ⌖</div><br>
-    <div id="terminal">
-        <span class="Line">>Previously: Technical Director & Jr. Software Dev @ <a href="https://waveform.gg">Waveform
-                Entertainment</a></span><br>
-        <span class="Line">><a href="https://github.com/bendoll">GitHub</a> // <a
-                href="https://linkedin.com/in/benjamindoll">LinkedIn</a></span> // <a
-            href="https://valorant.op.gg/profile/name=Cozmo&tagLine=6ix">OP.GG</a> // contact: <a
-            href="mailto:human@benji.to">human@benji.to</a> <br>
-        <span class="Line">></span><a href="jungle">_</a>
+    </pre>
+        <div id="location" class="line">⌖ Toronto, ON, Canada ⌖</div>
+        <div class="line">Previously: Technical Director & Jr. Software Dev
+            <span class="job">
+                @ <a href="https://waveform.gg">Waveform Entertainment</a>
+            </span>
+        </div>
+        <div class="line">
+            <!-- <span class="projects.html">
+                <a href="projects">Projects</a> //
+            </span> -->
+            <span class="github">
+                <a href="https://github.com/bendoll">GitHub</a> //
+            </span>
+            <span class="linkedin">
+                <a href="https://linkedin.com/in/benjamindoll">LinkedIn</a> //
+            </span>
+            <span class="opgg">
+                <a href="https://valorant.op.gg/profile/name=Cozmo&tagLine=6ix">OP.GG</a> //
+            </span>
+            <span class="contact">
+                contact: <a href="mailto:human@benji.to">human@benji.to</a>
+            </span>
+        </div>
     </div>
-
+    <div class="line input">></span><a class="secret" href="jungle">_</a>
+    </div>
 </body>
 
 </html>

@@ -1,0 +1,86 @@
+:root {
+    --primary: #008F11;
+    --secondary: #003B00;
+    --highlight: #00FF41;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-flow: column;
+    background-image: url("../images/repeated-square-dark.png");
+    background-color: #000;
+    color: var(--primary);
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 1.5em;
+}
+
+#command {
+    position: absolute;
+    padding: 0.5em;
+    & span {
+        font-style: italic;
+    }
+}
+
+/* main content */
+#info {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 2em;
+}
+
+#ASCII {
+    line-height: normal;
+    text-align: center;
+}
+
+.input {
+    padding: 0.5em;
+    position: relative;
+    left: 0px;
+}
+
+.secret {
+    animation: blink 1s steps(2) infinite;
+}
+
+/* hyperlink colours */
+a:link {
+    color: var(--highlight);
+}
+
+a:visited {
+    color: var(--highlight);
+}
+
+a:hover {
+    color: var(--primary);
+}
+
+a:active {
+    color: var(--secondary);
+}
+/*  */
+/* #command a,
+#command a:visited {
+    text-decoration: none !important;
+    color: var(--primary) !important;
+} */
