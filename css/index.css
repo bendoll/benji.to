@@ -22,7 +22,7 @@ body {
     margin: 0;
     display: flex;
     flex-flow: column;
-    background-image: url("../images/repeated-square-dark.png");
+    /* background-image: url("../images/repeated-square-dark.png"); */
     background-color: #000;
     color: var(--primary);
     font-family: 'Ubuntu Mono', monospace;
