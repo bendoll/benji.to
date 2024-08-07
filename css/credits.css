@@ -1,0 +1,47 @@
+@media (max-width: 768px) {
+    body {
+        overflow-x: auto !important;
+    }
+
+    .tableizer-firstrow {
+        font-size: 1em !important;
+    }
+
+    .tableizer-table td {
+        font-size: 1em !important;
+    }
+}
+
+iframe {
+    width: 100%;
+    height: calc(100vh - 10em);
+    margin-top: 5em;
+    border: none;
+    position: fixed;
+    top: 0;
+    left: -2px;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.tableizer-table {
+    border-collapse: collapse;
+}
+
+.tableizer-firstrow {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    font-weight: bold;
+    font-size: 2em;
+    border: 2px solid var(--secondary);
+    background-color: #000;
+}
+
+.tableizer-table td {
+    padding: 0.5em;
+    font-size: 1.5em;
+    border: 2px solid var(--secondary);
+}
